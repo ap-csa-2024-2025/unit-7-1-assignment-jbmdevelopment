@@ -18,7 +18,7 @@ public class Main
     System.out.println(arr.size());
     System.out.println(arr);
     if(arr.size() > 2) {
-      arr[arr.size() - 1] = arr[0];
+      arr.set(arr.size() - 1, arr.get(0));
       arr.remove(0);
     }
     System.out.println(arr);
