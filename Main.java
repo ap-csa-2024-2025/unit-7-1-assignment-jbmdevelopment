@@ -8,12 +8,13 @@ public class Main
     Scanner sc = new Scanner(System.in);
     String input = "";
     ArrayList<String> arr = new ArrayList<String>();
-
+   System.out.println("Say something, say STOP to end the code");
     while (!input.equals("STOP"))
     {
       input = sc.nextLine();
-      arr.add(input);
-      System.out.println("infinite loop! replace with your code");
+      if(!input.equals("STOP")) {
+        arr.add(input);
+      }
     }
     System.out.println(arr.size());
     System.out.println(arr);
